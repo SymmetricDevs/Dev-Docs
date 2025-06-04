@@ -14,16 +14,14 @@ command = "mdbook-admonish"
 
 [preprocessor.emojicodes]
 
-[preprocessor.template]
-before = ["mermaid","admonish","emojicodes"] # templates can include these so we run this first
-
-[preprocessor.embedify]
-
 [output]
 
 [output.html]
 mathjax-support = true
 additional-css = ["./mdbook-admonish.css"]
+
+git-repository-url = "https://github.com/SymmetricDevs/Dev-Docs"
+edit-url-template = "https://github.com/SymmetricDevs/Dev-Docs/tree/main/{path}"
 
 [output.html.playground]
 runnable = false
