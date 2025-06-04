@@ -22,6 +22,7 @@ additional-css = ["./mdbook-admonish.css"]
 
 git-repository-url = "https://github.com/SymmetricDevs/Dev-Docs"
 edit-url-template = "https://github.com/SymmetricDevs/Dev-Docs/tree/main/{path}"
+additional-js = ["mermaid.min.js", "mermaid-init.js"]
 
 [output.html.playground]
 runnable = false
