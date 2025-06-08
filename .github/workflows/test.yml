@@ -19,7 +19,7 @@ jobs:
         with:
           tool: mdbook@0.4.50,mdbook-admonish@1.19.0,mdbook-linkcheck@0.7.7,mdbook-mermaid@0.15.0,mdbook-emojicodes@0.3.0
       - name: Build with mdBook
-        run: mdbook build
+        run: mdbook build src
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
