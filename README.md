@@ -11,4 +11,4 @@ mdbook serve
 
 Or if you're a freak there's the nix flake ;)
 
-For most PR's however its probably not necessary to actually install mdbook and check because, its like, markdown.
+For most PRs, however, it's probably not necessary to actually install mdbook and check because it's just Markdown.
