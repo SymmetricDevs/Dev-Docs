@@ -3,6 +3,9 @@ authors = ["Supersymmetry Contributors"]
 language = "en"
 title = "Supersymmetry Dev Docs"
 
+[source]
+src="src"
+
 [preprocessor]
 
 [preprocessor.mermaid]
