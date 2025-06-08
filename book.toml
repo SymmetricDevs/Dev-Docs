@@ -1,8 +1,10 @@
 [book]
 authors = ["Supersymmetry Contributors"]
 language = "en"
-src = "src"
 title = "Supersymmetry Dev Docs"
+
+[source]
+src="src"
 
 [preprocessor]
 
