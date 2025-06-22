@@ -7,4 +7,4 @@ Block textures in Supersymmetry come from their assigned mods, but Gregtech-base
 Some reminders for blocks:
 - Each textured block has an entry in blockstates, where block variants are defined.
 - Blocks have models in models/block, where textures with resource location somemod:somepath exist in somemod/textures/somepath.json.
-- 
+- When importing from Blockbench, be sure to rename all mod prefixes to their correct values!
