@@ -16,7 +16,8 @@ A particular strength of Git is its distributed nature, meaning that every perso
 
 ## Common Version Control Terminology
 
-![An example of a version control history tree. Sourced from https://commons.wikimedia.org/wiki/File:Revision_controlled_project_visualization.svg](terminologyviz.png)
+![Version Control Graph](terminologyviz.png)
+An example of a version control history tree. Sourced from https://commons.wikimedia.org/wiki/File:Revision_controlled_project_visualization.svg
 
 ### Repository
 
