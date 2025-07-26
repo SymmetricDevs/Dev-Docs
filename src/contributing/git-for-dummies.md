@@ -134,7 +134,7 @@ You can then run:
 git pull upstream BRANCH
 ```
 
-To pull the changes from the Supersymmetry repository. Running a regular `git pull origin BRANCH` command will pull from your forked repository.
+To pull the changes from the Supersymmetry repository. Running a regular `git pull origin BRANCH` command will pull from your forked repository. Usually this branch will be main.
 
 You can now edit files within your instance directory as you see fit.
 
