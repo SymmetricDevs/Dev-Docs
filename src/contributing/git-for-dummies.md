@@ -150,4 +150,12 @@ You can add the `-all` or `-A` flag to indicate you want to commit all files. Af
 git commit -m COMMIT_MESSAGE
 ```
 
-Once committed, you may make a pull request on the Supersymmetry repository with your commits.
+Then push your changes to GitHub by using the command:
+
+```
+git push origin BRANCH
+```
+
+Once pushed, you may make a pull request on the Supersymmetry repository with your commits.
+
+Happy contributing!
