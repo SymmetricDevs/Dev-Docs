@@ -80,7 +80,7 @@ Find your respective download of Git [here](https://git-scm.com/downloads).
 Access the Git Command Line Interface (Git CLI). You should set a uniform username for your commits using a global flag, like below:
 
 ```
-git config --global user.name "USERNAME'
+git config --global user.name "USERNAME"
 ```
 
 GitHub (which Supersymmetry uses) prefers that you also set a commit email address to link your commits with your GitHub account.
