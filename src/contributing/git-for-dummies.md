@@ -115,13 +115,11 @@ Congratulations! You are ready to use Git.
 
 Download an instance of Supersymmetry from GitHub and import it into a Minecraft launcher (e.g. Prism Launcher). 
 
-Open the Minecraft instance directory.
-
 Create a fork of Supersymmetry for your own development needs. This can be done through your web browser, desktop GitHub client, or the GitHub CLI.
 
-In your instance directory, delete all folders that have matching names with your forked repository. Afterwards,clone your forked repository in the directory. This is to let Git know that you will be making edits within your instance folder.
+Clone the forked repository. Point your instance path at the cloned repository. You can then run packwiz to download the necessary mods for running the client.
 
-If you would like to sync your directory with the  Supersymmetry repository, you can run:
+If you would like to sync your repository with the upstream Supersymmetry repository, you can run:
 
 
 ```
