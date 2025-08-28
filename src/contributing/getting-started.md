@@ -21,10 +21,10 @@ The modpack development cycle primarily works around building the modpack throug
 Once you've downloaded Python, you may now build the pack. Open any command terminal to the directory in which the Supersymmetry repository is copied, and then run the following command:
 
 Windows:
-```python3 build/main.py -c```
+```python3 build\main.py -c```
 
 Linux:
-```python3 build\main.py -c```
+```python3 build/main.py -c```
 
 (You may need to modify the above command based on what your Python command is named. Common names include `python`, `python3`, and `python3.x`.)
 
