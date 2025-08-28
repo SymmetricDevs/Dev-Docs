@@ -4,6 +4,7 @@
 
 - [Project Structure](./project-structure.md)
 - [Contributing](./contributing.md)
+  - [Getting Started](./guides/getting-started.md)
   - [Git for Dummies](./contributing/git-for-dummies.md)
 - [Guides](./guides.md)
   - [Writing Quests](./guides/writing-quests.md)
