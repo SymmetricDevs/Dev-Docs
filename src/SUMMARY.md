@@ -5,6 +5,7 @@
   - [Getting Started](./contributing/getting-started.md)
   - [Git for Dummies](./contributing/git-for-dummies.md)
   - [Supersymmetry Projects](./contributing/project-structure.md)
+  - [Susy-Core structure](./contributing/susy-core-structure.md)
 - [Guides](./guides.md)
   - [Writing Quests](./guides/writing-quests.md)
   - [Writing Recipes](./guides/writing-recipes.md)

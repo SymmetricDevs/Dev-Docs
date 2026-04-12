@@ -9,3 +9,4 @@ This particular module is meant to introduce you to how you might begin making y
 - How to perform basic file operations on a personal computer
 - How to install programs
 - Some basic coding knowledge (especially in Java or other C-style programs)
+- Collaborative Git/Github knowledge (commits, branches, merging, pull requests)

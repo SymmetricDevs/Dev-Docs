@@ -30,6 +30,13 @@ Linux:
 
 Once you've performed this command, look in the `buildOut` folder to see your `client.zip`! You may now import this into the modpack launcher of your choice. If you want a server instance, remove the `-c` argument in the command.
 
+## Running a test instance of Supersymmetry on PrismLauncher
+
+One way to test in-development versions of Supersymmetry is to create an instance of Supersymmetry on PrismLauncher and then making the following modifications to the instance's `minecraft` folder:
+
+- Replacing the `groovy`, `resources`, `structures` folders using the command (on Linux) `ln -s "FOLDER LOCATION" "SYMLINK LOCATION"`
+- Replacing the Susy-Core mod (named Supersymmetry) with a compiled version using `ln -s` in the same way.
+
 ## Working with SymmetricDevs/Susy-Core
 Susy-Core also has a build system known as Gradle (as is used for the majority of Minecraft mods).
 
@@ -38,6 +45,8 @@ Once you've cloned and entered the repository in IntelliJ IDEA, look for a notif
 <img width="319" height="526" alt="image" src="https://github.com/user-attachments/assets/ff2b296a-0e99-438b-a356-06766684daa8" />
 
 Selecting any of these will override the selected top-line command "Setup Workspace," allowing you to work more efficiently. Below are some important Gradle "run configurations" for you to know.
+
+It is also possible to interface with Gradle over the command line, either by using `./gradlew` to call commands or by using a system installation. We advise using a Gradle version of 8.9 with Java 21.0.2 at the current moment. To view all tasks from the command line, use `gradle tasks`.
 
 ### 2. Run Client
 This particular command starts a client instance of Minecraft including Susy-Core and a few other mods required to load it (including GregTech and JEI). If you want to debug Susy-Core, you can click the green bug icon you see here:
@@ -52,3 +61,4 @@ This command builds a set of JAR files in the `build/libs` folder. After navigat
 <img width="579" height="171" alt="image" src="https://github.com/user-attachments/assets/0c9da9a3-179e-4da8-a613-5dfb5bbf1a88" />
 
 However, the only one that can be brought into your modpack's `mods` folder without issue is the one that does NOT have `dev` at the end of the name (the first one in the picture above). The others are deobfuscated files that only work with IntelliJ IDEA, and they will crash your game if you try to use them in a real modpack instance. (Also, I recommend clearing out this folder before running the command as to not get confused about which version to pick.)
+
