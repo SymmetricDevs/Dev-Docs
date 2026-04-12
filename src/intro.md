@@ -1,10 +1,10 @@
 # Introduction
 
 ```admonish info "Contributing"
-You'll find links to the source code for each page in the top-right corner of each page. If you would like to make contributions it's fully open source and open to webedits / pull requests.
+You'll find links to the source code for each page in the top-right corner of each page. If you would like to make contributions, please know that it's fully open source and open to webedits / pull requests.
 ```
 
-Supersymmetry is a Minecraft modpack for 1.12 based around GregTech! But if you're here reading this, you probably already know that. What makes Supersymmetry any different from all those other packs?
+Supersymmetry is a Minecraft modpack for 1.12.2 based around GregTech! But if you're here reading this, you probably already know that. What makes Supersymmetry any different from all those other packs?
 
 ## Supersymmetry fundamentally chooses realism.
 
@@ -12,7 +12,7 @@ We believe that science can create engaging, interesting gameplay, and that ther
 
 ## Supersymmetry creates an immersive industrial atmosphere for its players.
 
-From the setting and lore of the game to the function and design of its machines, Supersymmetry attempts to create a cohesive brutalist and industrial backdrop for players to create on top of.
+From the setting and lore of the game to the function and design of its machines, Supersymmetry attempts to create a cohesive brutalist and industrial backdrop for players to create on top of. We seek to create immersion through combat, lore, and adventure, and we seek to use Supersymmetry to combine GregTech progression with the steady conquest of outer space. 
 
 ## Supersymmetry is not afraid to take its time.
 
