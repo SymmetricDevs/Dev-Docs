@@ -21,37 +21,37 @@ An example of a version control history tree. Sourced from https://commons.wikim
 
 ### Repository
 
-Repository refers to a data structure storing metadata that points towards a file or directory structure. 
+A repository refers to a data structure storing metadata that points towards a file or directory structure. 
 
 You can think of this as a labeled list of all files along with a complete history of modifications to these files.
 
 ### Branch
 
-Branch is an independent separation of the codebase from another repository. This can also be referred to as a fork.
+A branch is an independent separation of the codebase from another repository. This can also be referred to as a fork.
 
 You can think of this as making a copy of another repository for separate development.
 
 ### Commit
 
-Commit can either be used to refer to a changeset as an object, or can be used to refer to make changes into a repository. 
+A commit can either be used to refer to a changeset as an object, or can be used to refer to make changes into a repository. 
 
 You can think of this as either talking about a specific change when used as a noun, or as a verb, changing something that is reflected in the repository.
 
 ### Push
 
-Push copies changes from one repository to another, initiated by the source repository.
+"Push" copies changes from one repository to another, initiated by the source repository.
 
 ### Pull
 
-Pull does the same as push but is initiated by the reciepient repository.
+"Pull" does the same as push but is initiated by the reciepient repository.
 
 #### Pull request
 
-Pull request asks for a source repository to combine the revisions made in a separately developed repository. This is referred to as merging. Pull requests frequently invovle discussion of the request.
+A pull request asks a source repository to combine the revisions made in a separately developed repository. This is referred to as merging. Pull requests frequently involve discussion of the request.
 
 ### Fetch
 
-Fetch is identical to pull conceptually, however the `git fetch` command is behaviorally different from `git pull` as it does not automatically merge changes into your working branch.
+"Fetch" is identical to pull conceptually, however the `git fetch` command is behaviorally different from `git pull` as it does not automatically merge changes into your working branch.
 
 ### Merge
 
@@ -65,7 +65,7 @@ Resolve is a user intervention addressing change conflicts to a file.
 
 ### Clone
 
-Clone is creating a new repository using another repository as your base.
+"Clone" is creating a new repository using another repository as your base.
 
 You can think of this as copying another repository for yourself.
 
@@ -117,7 +117,7 @@ Download an instance of Supersymmetry from GitHub and import it into a Minecraft
 
 Create a fork of Supersymmetry for your own development needs. This can be done through your web browser, desktop GitHub client, or the GitHub CLI.
 
-Clone the forked repository. Point your instance path at the cloned repository. You can then run packwiz to download the necessary mods for running the client.
+Clone the forked repository. Point your instance path at the cloned repository. You can then run Python and packwiz to download the necessary mods for running the client.
 
 If you would like to sync your repository with the upstream Supersymmetry repository, you can run:
 
@@ -132,7 +132,11 @@ You can then run:
 git pull upstream BRANCH
 ```
 
-To pull the changes from the Supersymmetry repository. Running a regular `git pull origin BRANCH` command will pull from your forked repository. Usually this branch will be main.
+To pull the changes from the Supersymmetry repository. Running a regular `git pull origin BRANCH` command will pull from your forked repository. Usually this branch will be main. Usually, we try to make one branch for each PR, and it helps to avoid using the parent branch's name. You can make a new branch from your current position like so:
+
+```
+git switch -c <branch-name>
+```
 
 You can now edit files within your instance directory as you see fit.
 
