@@ -1,8 +1,4 @@
-# Introduction
-
-```admonish info "Contributing"
-You'll find links to the source code for each page in the top-right corner of each page. If you would like to make contributions, please know that it's fully open source and open to webedits / pull requests.
-```
+# Introduction: Why Does SUSY Exist?
 
 Supersymmetry is a Minecraft modpack for 1.12.2 based around GregTech! But if you're here reading this, you probably already know that. What makes Supersymmetry any different from all those other packs?
 
@@ -19,3 +15,7 @@ From the setting and lore of the game to the function and design of its machines
 While releases for Supersymmetry do occur every two weeks, us developers perform large quantities of research into the scientific literature to inform our gameplay. We also take care to iteratively develop our game design in response to feedback from the community.
 
 If you are interested in contributing to a modpack committed to realism, atmosphere, and quality, you are free to join us.
+
+```admonish info "Contributing"
+You'll find links to the source code for each page in the top-right corner of each page. If you would like to contribute to this documentation, please know that it's fully open source and open to webedits / pull requests.
+```

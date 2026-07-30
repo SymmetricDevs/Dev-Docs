@@ -18,7 +18,7 @@ This repository contains the principal Java code for the modpack. It also contai
 
 ### [Supercritical](https://github.com/SymmetricDevs/Supercritical)
 
-This repository has our custom nuclear energy implementation. It contains nuclear-relevant recipes, items, multiblocks, and textures.
+This repository has our custom fission reactor implementation. It contains nuclear-relevant recipes, items, multiblocks, and textures.
 
 ### [Dev-Docs](https://github.com/SymmetricDevs/Dev-Docs)
 
@@ -26,10 +26,14 @@ This repository contains the documentation for these projects as well as tutoria
 
 There are also a few projects of note from outside the SymmetricDevs organization.
 
+### [RecipeViewer](https://github.com/SymmetricDevs/RecipeViewer)
+
+This repository stores a [Vite website and a few NPM scripts that allow players to view recipes without launching the game](https://symmetricdevs.github.io/RecipeViewer/). This is mostly vibe-coded, but it does need maintenance in terms of replacing recipedump.json.gz for each game version. Contact bruberu for more information.
+
 ### [GregTech](https://github.com/GregTechCEu/GregTech)
 
-This is the mod that underpins our entire project! As of writing this (27 Aug 2025), this mod is still being ported to a new UI library, ModularUI. Help on this project makes our code more stable and efficient, and it attracts further attention to this version.
+This is the mod that underpins our entire project! As of writing this (30 Jul 2026), this mod is still being ported to a new UI library, ModularUI. Help on this project makes our code more stable and efficient, and it attracts further attention to this version.
 
 ### [Modern Supersymmetry](https://github.com/ModernSymmetricDevs)
 
-In the future, it is planned to port Supersymmetry to modern versions of Minecraft, primarily for the higher level of support and attention that comes with it. However, as of writing this (27 Aug 2025), most of the developers working on this are busy with other tasks. Currently, work is planned to shift to this version more once LuV tier is reached.
+In the future, it is planned to port Supersymmetry to modern versions of Minecraft, primarily for the higher level of support and attention that comes with it. However, as of writing this (30 Jul 2026), most of the developers working on this are busy with other tasks. Currently, work is planned to shift to this version more once LuV tier is reached. MCTian-mi has made quite a bit of progress with porting Supercritical and some Susy-Core multiblocks to 1.20 (version not final). 

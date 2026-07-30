@@ -1,21 +1,19 @@
 # Getting Started
-To set up a repository, we recommend installing [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/) and the Java 8 JDK (which IntelliJ can help you install).
-Once you do this, you can create a new IDEA project by cloning one of our repositories. In fact, there is an option for this on the IDEA launch page.
+## What do I work on?
+As an aspiring SUSY developer, there are a few channels of information you can look at to see what to work on:
 
-## Which repository do I clone?
-If you want to tweak the configurations of mods or recipes, you'll want to use our main repository, [SymmetricDevs/Supersymmetry](https://github.com/SymmetricDevs/Supersymmetry/). If you instead want to work with creating new multiblocks or other more complex features, you'll want to work on the core mod, which is found at [SymmetricDevs/Susy-Core](https://github.com/SymmetricDevs/Susy-Core). You can learn more about the various repositories that Supersymmetry developers work on in [Supersymmetry Projects](./project-structure.md)
+- On the [official Discord server](https://discord.gg/KYF5a4scRj), the #workorders channel has plenty of small tasks for you to choose from of varying difficulty.
+  - #bug-discussions and #bug-reports can also be useful for getting ideas, or just lurk in #susy-general.
+- If you don't want to join the Discord (fair), you can also look at the [GitHub issues page](https://github.com/SymmetricDevs/Supersymmetry/issues) for Supersymmetry (or [Susy-Core](https://github.com/SymmetricDevs/Susy-Core/issues)). These issues may be rather difficult to fix, however.
 
-In order to actually clone it, you will want to select "Project from Version Control" in IDEA.
+Some easy starting tasks I would recommend are editing a quest, changing a recipe, or adding a new multiblock. Once you've selected a task, you'll need to clone a repository. You can learn more about the various repositories that we work on in [Supersymmetry Projects](./project-structure.md), but the basics are:
 
-<img width="800" height="245" alt="image" src="https://github.com/user-attachments/assets/cdf359dd-9994-49a9-b637-0d0b1304ea03" />
-
-You can then navigate to the repository you want to clone in your browser and copy this URL found under the "Code" button:
-
-<img width="900" height="357" alt="image" src="https://github.com/user-attachments/assets/e538cf64-a6d3-4abc-aadd-618efd7ee4e2" />
-
-Inserting that into the URL field in IDEA and then setting the main repository folder will start the process of downloading it onto your computer.
+- If you want to tweak the configurations of mods or change/add basic items and recipes, you'll want to use our main repository, [SymmetricDevs/Supersymmetry](https://github.com/SymmetricDevs/Supersymmetry/). We'll comment more on how to set this repository up here.
+- If you instead want to work with creating new multiblocks or other more complex features, you'll want to work on the core mod, which is found at [SymmetricDevs/Susy-Core](https://github.com/SymmetricDevs/Susy-Core). More information on this is contained in the [Susy-Core section](./susy-core-structure.md).
 
 ## Working with SymmetricDevs/Supersymmetry
+Most basic code-oriented text editors work fine for the main repository, but [Visual Studio Code](https://code.visualstudio.com/) works well enough. Once you've installed it, pick "Clone Git Repository" on the start screen, click "Clone from GitHub" in the small popup, and type in SymmetricDevs/Supersymmetry.
+
 The modpack development cycle primarily works around building the modpack through a program called [packwiz](https://packwiz.infra.link/). Packwiz creates the ZIP files that can be imported into modpack launchers like PrismLauncher or ATLauncher. The Supersymmetry repository wraps packwiz using Python, which you'll need if you want to use packwiz most efficiently. You may download Python [here](https://www.python.org/downloads/).
 
 Once you've downloaded Python, you may now build the pack. Open any command terminal to the directory in which the Supersymmetry repository is copied, and then run the following command:
@@ -34,31 +32,6 @@ Once you've performed this command, look in the `buildOut` folder to see your `c
 
 One way to test in-development versions of Supersymmetry is to create an instance of Supersymmetry on PrismLauncher and then making the following modifications to the instance's `minecraft` folder:
 
-- Replacing the `groovy`, `resources`, `structures` folders using the command (on Linux) `ln -s "FOLDER LOCATION" "SYMLINK LOCATION"`
-- Replacing the Susy-Core mod (named Supersymmetry) with a compiled version using `ln -s` in the same way.
-
-## Working with SymmetricDevs/Susy-Core
-Susy-Core also has a build system known as Gradle (as is used for the majority of Minecraft mods).
-
-Once you've cloned and entered the repository in IntelliJ IDEA, look for a notification in the bottom right that tells you to "Load Gradle Project." Once you click it, it will configure a set of commands you can use to test Susy-Core in a minimal environment. You can look for some particularly common ones in the top-right corner:
-
-<img width="319" height="526" alt="image" src="https://github.com/user-attachments/assets/ff2b296a-0e99-438b-a356-06766684daa8" />
-
-Selecting any of these will override the selected top-line command "Setup Workspace," allowing you to work more efficiently. Below are some important Gradle "run configurations" for you to know.
-
-It is also possible to interface with Gradle over the command line, either by using `./gradlew` to call commands or by using a system installation. We advise using a Gradle version of 8.9 with Java 21.0.2 at the current moment. To view all tasks from the command line, use `gradle tasks`.
-
-### 2. Run Client
-This particular command starts a client instance of Minecraft including Susy-Core and a few other mods required to load it (including GregTech and JEI). If you want to debug Susy-Core, you can click the green bug icon you see here:
-
-<img width="307" height="50" alt="image" src="https://github.com/user-attachments/assets/51fcdeb2-b6a9-42f5-bb7b-eb057551b268" />
-
-Careful tracing of the code in debugging mode, involving setting breakpoints, going step-by-step through each line, and looking for points before the glitch has necessarily occurred are essential for finding and fixing bugs.
-
-### 6. Build Jars
-This command builds a set of JAR files in the `build/libs` folder. After navigating there, you'll notice quite a few files:
-
-<img width="579" height="171" alt="image" src="https://github.com/user-attachments/assets/0c9da9a3-179e-4da8-a613-5dfb5bbf1a88" />
-
-However, the only one that can be brought into your modpack's `mods` folder without issue is the one that does NOT have `dev` at the end of the name (the first one in the picture above). The others are deobfuscated files that only work with IntelliJ IDEA, and they will crash your game if you try to use them in a real modpack instance. (Also, I recommend clearing out this folder before running the command as to not get confused about which version to pick.)
+- Replacing the `groovy`, `resources`, `structures` folders using the command (on Linux) `ln -s "ORIGINAL FOLDER LOCATION" "SYMLINK LOCATION"`
+- In some cases, you may need to build a special version of Susy-Core and replace it in the mods folder.
 
