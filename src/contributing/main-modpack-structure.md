@@ -10,7 +10,7 @@ The Supersymmetry repository uses several Python scripts for making ZIPped insta
 
 ## Testing Supersymmetry on PrismLauncher
 
-You can test in-development versions of Supersymmetry by downloading an instance of Supersymmetry on PrismLauncher and then making one of the following modification to the instance's folder:
+You can test in-development versions of Supersymmetry by downloading an instance of Supersymmetry on PrismLauncher and then making one of the following modifications to the instance's folder:
 
 - Replacing the `groovy`, `resources`, `structures`, and `config/betterquesting` folders manually from your main modpack repository
 - Create **virtual folder links** to those repository folders. On Linux, the command to make such a "symlink" is: `ln -s "REPOSITORY ORIGINAL FOLDER LOCATION" "INSTANCE SYMLINK LOCATION"`
