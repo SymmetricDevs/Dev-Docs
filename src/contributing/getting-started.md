@@ -8,7 +8,7 @@ As an aspiring SUSY developer, there are a few channels of information you can l
 
 Some easy starting tasks I would recommend are editing a quest, changing a recipe, or adding a new multiblock. Once you've selected a task, you'll need to clone a repository. You can learn more about the various repositories that we work on in [Supersymmetry Projects](./project-structure.md), but the basics are:
 
-- If you want to tweak the configurations of mods or change/add basic items and recipes, you'll want to use our main repository, [SymmetricDevs/Supersymmetry](https://github.com/SymmetricDevs/Supersymmetry/). We'll comment more on how to set this repository up here.
+- If you want to tweak the configurations of mods or change/add basic items and recipes, you'll want to use our main repository, [SymmetricDevs/Supersymmetry](https://github.com/SymmetricDevs/Supersymmetry/). We'll comment more on how to set this repository in the [main modpack section](./main-modpack-structure.md).
 - If you instead want to work with creating new multiblocks or other more complex features, you'll want to work on the core mod, which is found at [SymmetricDevs/Susy-Core](https://github.com/SymmetricDevs/Susy-Core). More information on this is contained in the [Susy-Core section](./susy-core-structure.md).
 
 ## Working with SymmetricDevs/Supersymmetry
