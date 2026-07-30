@@ -24,11 +24,12 @@ This repository has our custom fission reactor implementation. It contains nucle
 
 This repository contains the documentation for these projects as well as tutorials and tips for how to contribute! You can also press the edit button in the top-right corner if you want to start editing a page.
 
-There are also a few projects of note from outside the SymmetricDevs organization.
-
 ### [RecipeViewer](https://github.com/SymmetricDevs/RecipeViewer)
 
 This repository stores a [Vite website and a few NPM scripts that allow players to view recipes without launching the game](https://symmetricdevs.github.io/RecipeViewer/). This is mostly vibe-coded, but it does need maintenance in terms of replacing recipedump.json.gz for each game version. Contact bruberu for more information.
+
+
+There are also a few projects of note from outside the SymmetricDevs organization.
 
 ### [GregTech](https://github.com/GregTechCEu/GregTech)
 
